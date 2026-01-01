@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  /* Bento Grid Theme */
+  --background: #000000;
+  /* Very Deep Black */
+  --foreground: #E0E0E0;
+
+  --color-card: #121212;
+  /* Dark Card Background */
+  --color-card-hover: #181818;
+
+  --color-accent: #0e3b43;
+  /* Deep Teal for card backgrounds */
+  --color-accent-blue: #164e63;
+  /* Lighter teal for specific highlights */
+  --color-text-secondary: #9CA3AF;
+
+  --font-display: var(--font-inter);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--color-card);
+  --color-card-hover: var(--color-card-hover);
+  --color-accent: var(--color-accent);
+  --color-accent-blue: var(--color-accent-blue);
+  --color-muted: var(--color-text-secondary);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --radii-xl: 1.5rem;
+  /* Larger border radius for bento cards */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
